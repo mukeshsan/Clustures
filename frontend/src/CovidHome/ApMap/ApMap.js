@@ -18,7 +18,7 @@ const ApMap = () => {
   return (
     <div className='container MapWrapper'>
       <GoogleMapReact
-          bootstrapURLKeys={{ key: 'XXXX' }}// AIzaSyAS3ix4rVY4A-T4yPzWlEi766ycl2mY818
+          bootstrapURLKeys={{ key: 'AIzaSyAS3ix4rVY4A-T4yPzWlEi766ycl2mY818' }}
           defaultCenter={mapOption.center}
           defaultZoom={mapOption.zoom}
         >
