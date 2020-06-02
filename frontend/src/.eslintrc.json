@@ -1,0 +1,74 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": false
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "overrides": [
+        {
+            "files": ["**/*.test.js"],
+            "rules": {
+                "no-undef": "off"
+            }
+        }
+    ],
+    "rules": {
+        "space-before-function-paren": "off",
+        "indent": "off",
+        "no-tabs": "off",
+        "react/prop-types": "warn",
+        "max-len": "off",
+        "react/forbid-prop-types": "off",
+        "react/jsx-indent-props": "off",
+        "react/no-array-index-key": "off",
+        "react/jsx-filename-extension": "off",
+        "react/require-default-props": "off",
+        "react/jsx-indent": "off",
+        "function-paren-newline": "off",
+        "arrow-parens": "off",
+        "comma-dangle": "off",
+        "linebreak-style": 0,
+        "import/prefer-default-export": "off",
+        "object-curly-newline": "off",
+        "no-confusing-arrow": "off",
+        "no-underscore-dangle": "off",
+        "jsx-a11y/href-no-hash": "off",
+        "jsx-a11y/anchor-is-valid": [
+            "warn",
+            {
+                "aspects": ["invalidHref"]
+            }
+        ],
+        "jsx-a11y/label-has-for": [
+            2,
+            {
+                "components": ["Label"],
+                "required": {
+                    "some": ["nesting", "id"]
+                },
+                "allowChildren": false
+            }
+        ],
+        "react/sort-prop-types": [
+            "warn",
+            {
+                "ignoreCase": true,
+                "noSortAlphabetically": false
+            }
+        ],
+        "import/no-unresolved": [2, { "caseSensitive": false }]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"],
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    }
+}
